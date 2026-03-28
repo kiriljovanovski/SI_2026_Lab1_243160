@@ -1,0 +1,16 @@
+*   9f21f93 Resolve merge conflict in main and finalize features
+|\  
+| *   8fbf958 Merge master into feature-borrow-book
+| |\  
+| * | c5f7d4d Implement borrow book
+* | |   151a3bb Merge branch 'feature-genre-report'
+|\ \ \  
+| |_|/  
+|/| |   
+| * | f8f808f Implement genre report
+| |/  
+* / 80d2af9 Update borrow message on master
+|/  
+* b2c94c6 Implement book search
+* dfcdfa9 Add starter code
+* ad9f969 Initial commit

@@ -1,0 +1,103 @@
+git init - kreira .git papka i go pravi lokalen git repositorium
+git remote add origin- povrzuva lokalen repo so github
+git commit- pravi komit
+git add - dodava vo stagin faza
+git push - gi praka na GitHub
+git branch -kreira granka i pokazuva momentalna
+git checkout -prefrla na druga granka
+git merge - spojuva granki
+git log --oneline --graph --all -listna na komiti vo 1 linija so graficki prikaz i gi pokazuva site komiti
+
+
+9. git branch feature-search-books - pravi nova granka
+git checkout feature-search-books - se prefrla na grankata
+
+
+10.Implementiram barana funkcionalnost 
+git add SI2026Lab1Main.java Library.java -dodava vo stagin faza
+git commit -m "Implement book search"  - zadavam komit
+
+
+11.git push -u origin feature-search-books - ja parka na GitHub odnosno sinhronizira
+
+
+
+12- git checkout master -da se prevrli na master granka
+git merge feature-search-books- da gi spoi grankite
+
+
+
+13- git checkout master  -da se prevrli na master granka
+git merge feature-search-books - da gi spoi grankite
+git log --oneline --graph --all -listna na komiti vo 1 linija so graficki prikaz i gi pokazuva site komiti
+
+Spojuvanjeto beshe fast-forward bidejki master nemashe novi komiti
+b2c94c6 (HEAD -> master, origin/feature-search-books, feature-search-books) Implement book search
+dfcdfa9 (origin/master) Add starter code
+ad9f969 Initial commit
+bash: --graph: command not found
+
+
+14.git push origin master- ja parka na GitHub odnosno sinhronizira
+
+
+15.git checkout -b feature-borrow-book master -kreira granki od master
+git checkout -b feature-genre-report master -kreira granki od master
+
+
+16.Implementiram baran metod 
+git add SI2026Lab1Main.java - dodava vo stagin faza
+git commit -m "Implement borrow book" -pravam komit
+
+
+17.git checkout master - se vrakam na master
+git add SI2026Lab1Main.java - dodava vo stagin faza
+git commit -m "Update borrow message on master" -pravam komit
+
+
+18.git checkout feature-genre-report - se preflam na feature-genre-report granka
+implementiram baran metod
+git add SI2026Lab1Main.java Library.java - dodava vo stagin faza
+git commit -m "Implement genre report" -pravam komit
+
+
+19.git push -u origin feature-borrow-book -ja parka na GitHub odnosno sinhronizira
+
+
+20.git push -u origin feature-genre-report- ja parka na GitHub odnosno sinhronizira
+
+21.git checkout feature-borrow-book - se prefrla na grankata
+git merge master - gi spojuva grankite
+
+
+
+22.nastana konflikt bidejki 2 granki imaa promena na isto mesto i odluciv edna poraka da izbrisam odnosno od feature grankata ova beshe recursive merge
+On branch feature-borrow-book
+Your branch is ahead of 'origin/feature-borrow-book' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+
+
+23. git checkout master - se prefrla na master
+git merge feature-genre-report - gi spojuva grankite
+fast-forward merge bidejki master nema novi comits
+
+
+
+24.git checkout master - se prefrla na master
+git merge feature-borrow-book - gi spojuva grankite
+recursive bidejki feature  grankata imashe novi commits sho ne se na master
+ i imashe konflikt  bidejki 2 granki imaa promena na isto mesto i odluciv edna poraka da izbrisam
+
+
+25.git push origin master - sinhronizacija
+
+
+26.git log --oneline --graph --all > logs.txt  -listna na komiti vo 1 linija so graficki prikaz i gi pokazuva site komiti i gi stave vo datoteka
+git add logs.txt INDEX.txt - dodava vo stagin faza
+git commit -m "Final commit" - pravi komit
+
+27.git push origin master- sinhronizira 
+
